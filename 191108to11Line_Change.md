@@ -56,4 +56,4 @@ LIFF v2 要以 Line Login為核心channel來更新。這個更改將會禁止用
 **避免混淆 建議完成改動後刪除原應用。**
 # - - -
 [原文鏈接](https://developers.line.biz/en/news/2019/11/)
-翻錯請告知這個人：An（205）
+翻錯告知這個人：An（205）
