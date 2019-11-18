@@ -44,7 +44,7 @@ LIFF v2 要以 Line Login為核心channel來更新。這個更改將會禁止用
 | Login        | 不影響                                                                      |
 | Messaging    | **更改規格後**無法將LIFF應用加入Messaging API。規格更改期間，LIFF依然可用。 |
 
-##### 轉移至LINE Login channel
+##### 轉移至LINE Login channel的注意事項
 >To continue using the LIFF app added to the Messaging API channel, re-add the LIFF app to the LINE Login channel. Once re-added, LINE Developers console will issue a new LIFF app ID. As a result, please take note of the following:
 > * If you're using LIFF v2, change the LIFF app ID specified in liff.init().
 > * The LIFF URL used to launch LIFF（e.g.：line://app/1234567890-AbcdEfgh）will change.
