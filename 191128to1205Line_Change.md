@@ -7,7 +7,7 @@
 - - -
 ## <center>更動說明</center>
 #### 部分Domain name 的更改
-暫時會將這些LIFF functions停止。
+暫時會將這些LIFF functions停止。（最主要是IOS政策的影響）
 這兩個API的小簡介：
 1. `liff.scanCode()`  ：讓用戶開啟LINE的QR code 掃描器 並且讀取資料
 2. `liff.bluetooth.*` ：搜尋其他藍芽裝置。
