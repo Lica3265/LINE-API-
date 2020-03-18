@@ -1,64 +1,45 @@
-# <center>Line 更新快速瀏覽（2020一月份）</center> 
+# <center>Line Bot 小聚（2020三月初）</center> 
 <p align="right"></p>
 
 - - -
-更新注意部分
-1. 開發LIFF時，使用SCAN跟藍芽，IOS更新後會無法使用。（當然也可以開發僅給安卓使用的應用）
-2. 未來開發者名字都會出現在OA Page （注意Provider的名字）會有這個更動是因為有人仿冒官方帳號名稱，接案時請注意！
-
-
-應用部分
-1. 群組內私密訊息傳遞（用LIFF）
-   1. 針對不同用戶顯示不同訊息
-   2. 在LIFF內輸入訊息，不會被其他人看見
-
-2. 大型表單工具
-   1. 利用LIFF填寫表單上傳特徵及圖片，協助找狗
-   2. 填寫每日心情利用
-3. 第三方服務的傳遞
-   1. 在LIFF中取得LINE登入資訊
-   2. 在外部、內部瀏覽器取得登入資訊
-4. LIFF2.0神奇跳轉測試工具
-
-
+議程
+1. Line Api更動
+2. 口罩銷量查詢Line Bot 實戰經驗分享
+3. 其他經驗分享
 - - -
 ## <center>更動說明</center>
-#### 1.開發LIFF時，不要使用SCAN跟藍芽，因為IOS更新後會無法使用。
-![avatar](https://i.imgur.com/hSrxVIy.png)
-#### 2.未來開發者名字都會出現在OA Page 。
-![avatar](https://i.imgur.com/BfBV5ha.jpg)
-## <center>應用說明</center>
-
-#### 1. 寵物走失尋找工具
-![avatar](https://i.imgur.com/OYN8UxY.png)
-![avatar](https://i.imgur.com/g2p0XfH.png)
-#### 2. 協助用戶傳遞特殊訊息
-像是傳遞畫畫的圖片
-![avatar](https://i.imgur.com/AqwgIwI.png)
-用這支API即可
-![avatar](https://i.imgur.com/pCKdmtw.png)
-#### 3. 第三方服務的傳遞
-取決於用戶有沒有在哪裡登入過，有登入過時不用再次輸入帳號密碼。
-（LINE本身有瀏覽器，稱為內部瀏覽器）
-![avatar](https://i.imgur.com/n8rlG1K.png)
-![avatar](https://i.imgur.com/w9jDCN7.png)
-
-#### 4. LIFF2.0神奇跳轉測試工具
-![avatar](https://i.imgur.com/NrkCJcl.png)
-測試鏈接
-![avatar](https://i.imgur.com/OcLLT6e.png)
-測試結果一覽表
-https://docs.google.com/spreadsheets/d/1pfTUvDLSVFxLq4z_NYq7xgHXEafeZICztw2mSuKPY-4/edit#gid=0
+#### Line API更動分享
+1. LIFF v1 本來三月底會停用 Server API 這件事情會取消
+2. Narrowcasting and audience(精準化訊息推播)
+也就是訊息分眾 
+分眾如何解決問題
+客戶不會討厭廣告，他們只想要他們看到的廣告
+讓客戶點擊再行銷
+3. 未來停用BLE功能（藍芽相關模組）
+4. LIFF Share target picker 
+   一種讓用戶可以送Flex message的方式
 
 
+#### 口罩銷量查詢Line Bot 實戰分享
+這次分享主要不是在講Line Bot如何實作
+而是講解Azure的一些實用功能。
 
-## 目前最佳實務是在手機上使用 https + v1、在電腦上使用 https + v2 
+開發經驗分享
+首先先思考主要功能為何？
+1. 關鍵字查詢
+2. 地圖座標查詢
 
+再思考實作上困難以及技術節點 
+1. 如何確保快速更版不會影響使用者體驗
+解法：利用Azure提供的藍綠部署模式，可是使用者完全沒有感覺到更版帶來的影響。
+![兔](https://i.imgur.com/jCUGAdZ.png)
 
+2. 如何更新資料
+解法：利用Azure的“確保網站可用”功能，每五分鐘去戳Web API。
 
-
-
-
+3. 如何確保系統卡頓問題節點
+解法：利用Azure 系統可用率分析（如圖為政府API出問題）找出最為緩慢的部分
+![兔](https://i.imgur.com/SDde2I9.png)
 # - - -
 
 有更多消息想了解通知此人：An（分機：205）
